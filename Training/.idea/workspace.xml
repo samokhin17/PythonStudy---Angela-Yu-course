@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.WeatherTelegramBot">
+  <component name="RunManager" selected="Python.Geometry">
     <configuration name="Geometry" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,9 +160,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Geometry" />
         <item itemvalue="Python.WeatherTelegramBot" />
         <item itemvalue="Python.Weather" />
-        <item itemvalue="Python.Geometry" />
         <item itemvalue="Python.Percents" />
         <item itemvalue="Python.Hello" />
       </list>
