@@ -8,9 +8,7 @@ run = True
 
 while run:
     count = 0
-
     r = randint(1, 101)
-
     n = int(input("Введи любое целое число от 1 до 100: \n"))
 
     while n != r:
@@ -24,7 +22,6 @@ while run:
     print("Поздравляем! Вы угадали число за " + str(count + 1) + " попыток!\n")
 
     rerun = True
-
     reboot = input("Еще раз? Да/Нет: " + "\n")
 
     if reboot == "Да" or reboot == "да":
@@ -38,7 +35,3 @@ while run:
         run = True
     else:
         break
-
-
-
-

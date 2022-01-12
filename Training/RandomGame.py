@@ -23,8 +23,3 @@ while running:
         break
     else:
         print("Выбрана неверная операция!" + "\n")
-
-
-
-
-
