@@ -12,10 +12,8 @@ class AddContact(unittest.TestCase):
     
     def test_add_contact(self):
         driver = self.driver
-        self.open_home_page(driver)
         self.login(driver, username="admin", password="secret")
         self.create(driver, Contact(name="Alexander", header="Samokhin", footer="erex"))
-        self.return_to_home_page(driver)
         self.logout(driver)
 
     def logout(self, driver):
@@ -39,8 +37,10 @@ class AddContact(unittest.TestCase):
         driver.find_element_by_name("nickname").send_keys(contact.footer)
         # submit contact creation
         driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
+        self.return_to_home_page(driver)
 
     def login(self, driver, username, password):
+        self.open_home_page(driver)
         driver.find_element_by_name("user").click()
         driver.find_element_by_name("user").clear()
         driver.find_element_by_name("user").send_keys(username)
