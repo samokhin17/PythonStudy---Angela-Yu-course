@@ -14,8 +14,8 @@ class AddContact(unittest.TestCase):
     def test_add_contact(self):
         driver = self.driver
         self.open_home_page(driver)
-        self.login(driver)
-        self.create(driver)
+        self.login(driver, username="admin", password="secret")
+        self.create(driver, name="Alexander", header="Samokhin", footer="erex")
         self.return_to_home_page(driver)
         self.logout(driver)
 
@@ -25,29 +25,29 @@ class AddContact(unittest.TestCase):
     def return_to_home_page(self, driver):
         driver.find_element_by_link_text("home page").click()
 
-    def create(self, driver):
+    def create(self, driver, name, header, footer):
         # init contact creation
         driver.find_element_by_link_text("add new").click()
         # fill contact form
         driver.find_element_by_name("firstname").click()
         driver.find_element_by_name("firstname").clear()
-        driver.find_element_by_name("firstname").send_keys("qwerty")
+        driver.find_element_by_name("firstname").send_keys(name)
         driver.find_element_by_name("lastname").click()
         driver.find_element_by_name("lastname").clear()
-        driver.find_element_by_name("lastname").send_keys("qwert")
+        driver.find_element_by_name("lastname").send_keys(header)
         driver.find_element_by_name("nickname").click()
         driver.find_element_by_name("nickname").clear()
-        driver.find_element_by_name("nickname").send_keys("qwer")
+        driver.find_element_by_name("nickname").send_keys(footer)
         # submit contact creation
         driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
-    def login(self, driver):
+    def login(self, driver, username, password):
         driver.find_element_by_name("user").click()
         driver.find_element_by_name("user").clear()
-        driver.find_element_by_name("user").send_keys("admin")
+        driver.find_element_by_name("user").send_keys(username)
         driver.find_element_by_name("pass").click()
         driver.find_element_by_name("pass").clear()
-        driver.find_element_by_name("pass").send_keys("secret")
+        driver.find_element_by_name("pass").send_keys(password)
         driver.find_element_by_xpath("//input[@value='Login']").click()
 
     def open_home_page(self, driver):
