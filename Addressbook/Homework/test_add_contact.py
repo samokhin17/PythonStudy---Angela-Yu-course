@@ -2,8 +2,7 @@
 import unittest
 
 from selenium import webdriver
-from selenium.common.exceptions import NoAlertPresentException
-from selenium.common.exceptions import NoSuchElementException
+from Homework.contact import Contact
 
 
 class AddContact(unittest.TestCase):
@@ -15,7 +14,7 @@ class AddContact(unittest.TestCase):
         driver = self.driver
         self.open_home_page(driver)
         self.login(driver, username="admin", password="secret")
-        self.create(driver, name="Alexander", header="Samokhin", footer="erex")
+        self.create(driver, Contact(name="Alexander", header="Samokhin", footer="erex"))
         self.return_to_home_page(driver)
         self.logout(driver)
 
@@ -25,19 +24,19 @@ class AddContact(unittest.TestCase):
     def return_to_home_page(self, driver):
         driver.find_element_by_link_text("home page").click()
 
-    def create(self, driver, name, header, footer):
+    def create(self, driver, contact):
         # init contact creation
         driver.find_element_by_link_text("add new").click()
         # fill contact form
         driver.find_element_by_name("firstname").click()
         driver.find_element_by_name("firstname").clear()
-        driver.find_element_by_name("firstname").send_keys(name)
+        driver.find_element_by_name("firstname").send_keys(contact.name)
         driver.find_element_by_name("lastname").click()
         driver.find_element_by_name("lastname").clear()
-        driver.find_element_by_name("lastname").send_keys(header)
+        driver.find_element_by_name("lastname").send_keys(contact.header)
         driver.find_element_by_name("nickname").click()
         driver.find_element_by_name("nickname").clear()
-        driver.find_element_by_name("nickname").send_keys(footer)
+        driver.find_element_by_name("nickname").send_keys(contact.footer)
         # submit contact creation
         driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
