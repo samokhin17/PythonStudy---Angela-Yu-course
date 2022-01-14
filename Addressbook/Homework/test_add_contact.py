@@ -11,18 +11,20 @@ class AddContact(unittest.TestCase):
         self.driver.implicitly_wait(30)
     
     def test_add_contact(self):
-        driver = self.driver
-        self.login(driver, username="admin", password="secret")
-        self.create(driver, Contact(name="Alexander", header="Samokhin", footer="erex"))
-        self.logout(driver)
+        self.login(username="admin", password="secret")
+        self.create(Contact(name="Alexander", header="Samokhin", footer="erex"))
+        self.logout()
 
-    def logout(self, driver):
+    def logout(self):
+        driver = self.driver
         driver.find_element_by_link_text("Logout").click()
 
-    def return_to_home_page(self, driver):
+    def return_to_home_page(self):
+        driver = self.driver
         driver.find_element_by_link_text("home page").click()
 
-    def create(self, driver, contact):
+    def create(self, contact):
+        driver = self.driver
         # init contact creation
         driver.find_element_by_link_text("add new").click()
         # fill contact form
@@ -37,9 +39,10 @@ class AddContact(unittest.TestCase):
         driver.find_element_by_name("nickname").send_keys(contact.footer)
         # submit contact creation
         driver.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
-        self.return_to_home_page(driver)
+        self.return_to_home_page()
 
-    def login(self, driver, username, password):
+    def login(self, username, password):
+        driver = self.driver
         self.open_home_page(driver)
         driver.find_element_by_name("user").click()
         driver.find_element_by_name("user").clear()
@@ -49,7 +52,8 @@ class AddContact(unittest.TestCase):
         driver.find_element_by_name("pass").send_keys(password)
         driver.find_element_by_xpath("//input[@value='Login']").click()
 
-    def open_home_page(self, driver):
+    def open_home_page(self):
+        driver = self.driver
         driver.get("http://localhost/addressbook/")
 
     def tearDown(self):
