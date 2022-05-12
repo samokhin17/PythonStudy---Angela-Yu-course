@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d69ecf3-90c6-4dbd-a58c-c5744b24b0de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OOP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OOP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/.idea/environments.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Include/file.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Include/training.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/Activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/activate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/deactivate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/pip.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/pip3.10.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/pip3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/py.test.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/pytest.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/python.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/Scripts/pythonw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environments/selenium_env/pyvenv.cfg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="293sQYJ3bMDEg7vndEe20xiWh1E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d69ecf3-90c6-4dbd-a58c-c5744b24b0de" name="Changes" comment="" />
+      <created>1652353087709</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652353087709</updated>
+    </task>
+    <servers />
+  </component>
+</project>
